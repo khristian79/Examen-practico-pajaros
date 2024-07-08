@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --bnavegador: hsla(55, 53%, 66%, 0.855);
+  --efechover:  #ffffff4d;
+  --sectorifooter: #eec886c2;
+  --h1: #eec886c2;
+  --h2: #a39d5c;
+  --h3: #d1ca78;
+  --main_p: #3d3b22;
+}
+
+
+header {
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  color:var(--h1);
+  font-size: 9vw;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color:var(--h2);
+}
+
+img {
+  display:block;
+}
+
+nav {
+  background-color: var(--bnavegador);
+  /* margin-top: -8px; */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.width-l {
+  max-width: var(--width-l);
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 10vw;
+ 
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {  
+  transform: scale(1.1); 
+  background: var(--efechover);
+}
+
+nav a:hover {
+  border-bottom: 4px solid white;
+  color:var(--bnavegador);
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 1rem; */
+  align-items: center;
+}
+
+.flex-2 > div {
+  width: 50%;
+}
+
+.flex-2 p {
+  font-size: 1.5rem;
+}
+
+main section:nth-child(even) {
+  background-color: var(--sectorifooter);
+  color: black;
+}
+
+
+.section-text {
+  padding: 0 2rem;
+}
+
+main section:last-child h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.grid-3 p {
+    color: red;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+cite {
+    font-size: 1.2rem;
+}
+
+footer {
+  background-color: var(--sectorifooter);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  justify-items: center;
+}
+
+footer h2 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+#info {
+  font-size: 1.5rem;
+}
+
+.sociales {
+display: flex;
+justify-content: start;
+gap: 0.5rem;
+}
+
+
+.sociales img {
+  width: 40%;
+  justify-content: end;
+}
+
+footer a {
+  font-size: 0.8rem;
+}
+
+footer a:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.grid-3 h3{
+
+  color:var(--h3);
+
+}
